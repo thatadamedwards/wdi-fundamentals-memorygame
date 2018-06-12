@@ -1,4 +1,4 @@
-import { cards } from './cards';
-import { createBoard } from './game';
+import { cards } from './cards.js';
+import { createBoard } from './game.js';
 
 createBoard(cards);
