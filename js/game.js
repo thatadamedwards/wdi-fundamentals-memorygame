@@ -3,6 +3,14 @@ export { createBoard }
 let _cards = [];
 let _cardsInPlay = [];
 
+function _setCards(cards) {
+    if (!!cards && Array.isArray(cards)) {
+        _cards = cards;
+    } else {
+        console.warn("cards must be a defined, non-null, array of Card objects");
+    }
+}
+
 function _checkForMatch() {
     if (_cardsInPlay[0] === _cardsInPlay[1]) {
         alert("You Found a match!");
@@ -28,7 +36,7 @@ function _flipCard() {
 }
 
 function createBoard(cards) {
-    _cards = cards;
+    _setCards(cards);
 
     for (var index = 0; index < cards.length; index++) {
         const cardElement = document.createElement('img');
