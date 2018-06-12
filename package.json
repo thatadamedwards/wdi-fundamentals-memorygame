@@ -1,0 +1,23 @@
+{
+    "name": "wdi-fundamentals-memorygame",
+    "version": "1.0.0",
+    "description": "General Assembly Foundations - Memory Game project solution",
+    "main": "index.js",
+    "scripts": {
+        "start": "./node_modules/.bin/http-server -a localhost -p 8080 -c-1",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thatadamedwards/wdi-fundamentals-memorygame.git"
+    },
+    "author": "Ashley Thompson",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/thatadamedwards/wdi-fundamentals-memorygame/issues"
+    },
+    "homepage": "https://github.com/thatadamedwards/wdi-fundamentals-memorygame#readme",
+    "devDependencies": {
+        "http-server": "^0.11.1"
+    }
+}
