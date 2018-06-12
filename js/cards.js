@@ -6,20 +6,20 @@ const HEARTS = "hearts";
 const DIAMONDS = "diamonds";
 
 var cards = [
-    getCard(QUEEN, HEARTS),
-    getCard(QUEEN, DIAMONDS),
-    getCard(KING, HEARTS),
-    getCard(KING, DIAMONDS)
+    _getCard(QUEEN, HEARTS),
+    _getCard(QUEEN, DIAMONDS),
+    _getCard(KING, HEARTS),
+    _getCard(KING, DIAMONDS)
 ];
 
-function getCard(rank, suit) {
+function _getCard(rank, suit) {
     return {
         rank: rank,
         suit: suit,
-        image: getImagePath(rank, suit)
+        image: _getImagePath(rank, suit)
     };
 }
 
-function getImagePath(rank, suit) {
+function _getImagePath(rank, suit) {
     return `images/${rank}-of-${suit}.png`;
 }
